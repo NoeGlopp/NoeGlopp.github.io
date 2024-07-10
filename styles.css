@@ -1,0 +1,229 @@
+/* Estilos para las redes sociales en el encabezado */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-size: cover; /* Esto asegura que la imagen cubra toda la pantalla */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Añadido para manejar el efecto de barra */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    position: relative; /* Añadido para manejar el efecto de barra */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px; /* Distancia desde abajo */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la barra */
+    background-color: #ff8400; /* Color de la barra */
+    transform: scaleX(0); /* Inicia con ancho cero */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Aumenta el ancho al pasar el mouse */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los artículos del menú */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.menu-item-info {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.menu-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-family: 'Secular One', sans-serif;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 15px;
+    background-color: #F9AC2F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Estilos para el icono del carrito */
+.cart-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #F9AC2F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.cart-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Estilos para el carrito de compras */
+.cart {
+    position: fixed;
+    top: 80px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el lado derecho */
+    width: 300px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.cart h2 {
+    margin-top: 0;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos adicionales para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Reducir el ancho del contenedor en dispositivos más pequeños */
+        padding: 10px; /* Ajustar el padding para un espacio más compacto */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reducir el margen entre elementos de la lista */
+    }
+
+    .cart {
+        width: 250px; /* Reducir el ancho del carrito en dispositivos más pequeños */
+        padding: 15px; /* Ajustar el padding para un espacio más compacto */
+    }
+}

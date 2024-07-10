@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Secular+One&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagenes/logo.png" alt="Logo">
+            <p>Beto's Coffee es una cafetería de especialidad donde podrás pasar buenos momentos entre amigos y familia.</p>
+            <p>Dirección: Entre 39 y, Ave Fray Felipe De Jesus Moraga Sur, Santa Ana</p>
+            <p>⏰ LUNES A SÁBADOS 8:00 AM - 6:00PM</p>
+            <div class="social-media">
+                <div class="social-media-item">
+                    <img src="imagenes/facebook.png" alt="Facebook" class="social-icon">
+                    <span>Beto's Coffee</span>
+                </div>
+                <div class="social-media-item">
+                    <img src="imagenes/instagram.png" alt="Instagram" class="social-icon">
+                    <span>betoscoffeeshop</span>
+                </div>
+                <div class="social-media-item">
+                    <img src="imagenes/whatsapp (1).png" alt="Telefono" class="social-icon">
+                    <span>(503) 75769653</span>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#producto1">Cafe</a></li>
+                <li><a href="#producto2">Crepas</a></li>
+                <li><a href="#producto3">Paninis</a></li>
+                <li><a href="#producto4">Tostadas</a></li>
+                <li><a href="#producto5">Frappe</a></li>
+                <li><a href="#producto6">Bebidas sin cafe</a></li>
+                <li><a href="#producto7">Waffles</a></li>
+                <li><a href="#producto8">Postres</a></li>
+                <li><a href="#producto9">Ciabatta</a></li>
+            </ul>
+        </nav>
+        <section id="producto1">
+            <h2>Cafe</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cafe Americano</h3>
+                    <p>Cafe 100% americano etc......</p>
+                    <p>$1.35</p>
+                    <button onclick="addToCart('Cafe Americano', 1.35)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/betoscafe.jpg" alt="Cafe Americano">
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Espresso</h3>
+                    <p>informacion del producto</p>
+                    <p>$1.35</p>
+                    <button onclick="addToCart('Espresso', 1.35)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cafe.jpg" alt="Cafe de exportación">
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cappuccino</h3>
+                    <p>informacion del producto</p>
+                    <p>$2.50</p>
+                    <button onclick="addToCart('Cappuccino', 2.50)">Agregar al carrito</button>
+                </div>
+            
+                <div class="menu-item-img">
+                    <img src="imagenes/caliente.jpg" alt="Cafe Americano">
+
+                </div>
+            </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Cappuccino Vainilla</h3>
+                        <p>informacion del producto</p>
+                        <p>$3.00</p>
+                        <button onclick="addToCart('Cappuccino Vainilla', 3.00)">Agregar al carrito</button>
+                    </div>
+                    <div class="menu-item-img">
+                        <img src="imagenes/betoscafe.jpg" alt="Cafe Americano">
+                    </div>
+                </div> 
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Latte</h3>
+                        <p>informacion del producto</p>
+                        <p>$2.50</p>
+                        <button onclick="addToCart('Latte', 2.50)">Agregar al carrito</button>
+                    </div>
+                    <div class="menu-item-img">
+                        <img src="imagenes/betoscafe.jpg" alt="Cafe Americano">
+                    </div>
+                </div> 
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Caramel Latte</h3>
+                        <p>informacion del producto</p>
+                        <p>$2.80</p>
+                        <button onclick="addToCart('Caramel Latte', 2.80)">Agregar al carrito</button>
+                    </div>
+                    <div class="menu-item-img">
+                        <img src="imagenes/betoscafe.jpg" alt="Cafe Americano">
+                    </div>
+                </div> 
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h3>Moka</h3>
+                        <p>informacion del producto</p>
+                        <p>$2.80</p>
+                        <button onclick="addToCart('Moka', 2.80)">Agregar al carrito</button>
+                    </div>
+                    <div class="menu-item-img">
+                        <img src="imagenes/betoscafe.jpg" alt="Cafe Americano">
+                    </div>
+                </div>          
+        </section>
+
+        <section id="producto2">
+            <h2>Crepas</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Tradicional Nutella</h3>
+                    <p>Rellena de Nutella,banano y fresa.</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa Tradicional Nutella', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepasnew.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Tradicional Banano</h3>
+                    <p>Rellena de Nutella,banano</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa Tradicional Banano', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepasnew.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Tradicional Fresa</h3>
+                    <p>Rellena de Nutella,fresa</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa Tradicional Fresa', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepasnew.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>La del Rey</h3>
+                    <p>Rellena de Mantequilla de mani y banano.</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa La del rey', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cutecrepe.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cappuccino</h3>
+                    <p>Rellena de Nutella marshmellows, y galletas</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa Cappuccino', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepasnew.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cute Crepe</h3>
+                    <p>Rellena de Nutella marshmallows, y galletas</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Cute Crepe', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cutecrepe.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Crepa de Oreo</h3>
+                    <p>Rellena de Nutella  y Oreo, Coronada con una bola de sorbete de Vainilla</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa de Oreo', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepa oreo.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Crepizza</h3>
+                    <p>informacion del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepizza', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepas.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Crepa de pollo</h3>
+                    <p>informacion del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Crepa de pollo', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/crepas.jpg" alt="Crepas dulces">
+                </div>
+            </div>
+        </section>
+
+        <section id="producto3">
+            <h2>Paninis</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>pollo</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Panini de pollo', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/panini.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>jamon</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Panini de jamon', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/panini.jpg" alt="Brunchs">
+                </div>
+            </div>
+        </section>
+
+        <section id="producto4">
+            <h2>Tostadas</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Nutella</h3>
+                    <p>Tostadas de pan integral,nutella,banano y fresa.</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Tostadas Nutella', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/tostadasnutella.jpg" alt="Tostadas">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Frutos Rojo</h3>
+                    <p>Tostadas de pan integral,betun de queso crema y frutos rojos.</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Tostadas Frutos Rojo', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/Tostadasrojo.jpg" alt="Tostadas">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>La del Rey </h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Tostadas La del Rey', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Tostadas">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>pollo</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Tostadas de pollo', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Tostadas">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>jamon</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Tostadas de jamon', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/tostadas de jamon.jpg" alt="Tostadas">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Veggie Toast</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Veggie Toast', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/veggie.jpg" alt="Tostadas">
+                </div>
+            </div>
+        </section>
+
+        <section id="producto5">
+            <h2>Frappe</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Regular</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Frappe Regular', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/fra.caramelo.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+           
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Oreo</h3>
+                    <p>Información del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Frappe Oreo', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Vainilla</h3>
+                    <p>Información del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Frappe Vainilla', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/fra.caramelo.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Chocolate</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Frappe Chocolate', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/fra.caramelo.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Caramelo</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Frappe Caramelo', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/fra.caramelo.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Especial</h3>
+                    <p>Información del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Frappe Especial', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/fra.caramelo.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Dirty chai</h3>
+                    <p>Información del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Frappe Dirty chai', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+        </section>
+
+        <section id="producto6">
+            <h2>Bebidas sin Cafe</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Iced chai Latte</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Iced chai Latte', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Chai Frozen</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Chai Frozen', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Horchata</h3>
+                    <p>Información del producto</p>
+                    <p>$1.35</p>
+                    <button onclick="addToCart('Horchata', 1.35)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Licuado Banano</h3>
+                    <p>Información del producto</p>
+                    <p>$2.75</p>
+                    <button onclick="addToCart('Licuado Banano', 2.75)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Licuado Fresa</h3>
+                    <p>Información del producto</p>
+                    <p>$2.75</p>
+                    <button onclick="addToCart('Licuado Fresa', 2.75)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Licuado Mixto</h3>
+                    <p>Información del producto</p>
+                    <p>$2.75</p>
+                    <button onclick="addToCart('Licuado Mixto', 2.75)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+
+            <h2>Bebidas Caliente </h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>chai Latte</h3>
+                    <p>Información del producto</p>
+                    <p>$2.50</p>
+                    <button onclick="addToCart('chai Latte', 2.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Chocolate</h3>
+                    <p>Información del producto</p>
+                    <p>$1.50</p>
+                    <button onclick="addToCart('Chocolate', 1.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Brunchs">
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="producto7">
+            <h2>Waffles</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Frutos Rojos</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Waffles Frutos Rojos', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/wafflerojos.jpg" alt="Waffle">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Dulce Tentacion</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Waffles Dulce Tentacion', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/waflledulce.jpg" alt="Waffle">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Waflorio</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Waflorio', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/waflledulce.jpg" alt="Waffle">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Marsh</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Waffles Marsh', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/waffle.mash.jpg" alt="Waffle">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Pizza Waffle</h3>
+                    <p>Información del producto</p>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Pizza Waffle', 4.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/waflledulce.jpg" alt="Waffle">
+                </div>
+            </div>
+        </section>
+
+        <section id="producto8">
+            <h2>Postres</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cheescake Frutos Rojos</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Cheescake Frutos Rojos', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cheeskrojo.jpg" alt="Postres">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cheescake Nutella</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Cheescake Nutella', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/nutellacaramelo.jpg" alt="Postres">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Brownie</h3>
+                    <p>Información del producto</p>
+                    <p>$3.50</p>
+                    <button onclick="addToCart('Brownie', 3.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brao.jpg" alt="Postres">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Affogato</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Affogato', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Postres">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Pie de Manzana</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Pie de Manzana', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/piemanza.jpg" alt="Postres">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Flan de Coco</h3>
+                    <p>Información del producto</p>
+                    <p>$3.00</p>
+                    <button onclick="addToCart('Flan de Coco', 3.00)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/brunch.jpg" alt="Postres">
+                </div>
+            </div>
+        </section>
+        <section id="producto9">
+            <h2>Ciabatta</h2>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Tipico</h3>
+                    <p>Pan Ciabatta,huevo,frijoles y aguacate</p>
+                    <p>$5.50</p>
+                    <button onclick="addToCart('Ciabatta Tipico', 5.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cbt.tipico.jpg" alt="Ciabatta">
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Tradicional</h3>
+                    <p>Pan Ciabatta,huevo y jamon de pavo</p>
+                    <p>$5.50</p>
+                    <button onclick="addToCart('Ciabatta Tradicional', 5.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cbt.tradicional.jpg" alt="Ciabatta">
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>BLT</h3>
+                    <p>Pan Ciabatta,tocino,tomate y lechuga</p>
+                    <p>$5.50</p>
+                    <button onclick="addToCart('Ciabatta BLT', 5.50)">Agregar al carrito</button>
+                </div>
+                <div class="menu-item-img">
+                    <img src="imagenes/cbt.blt.jpg" alt="Ciabatta">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+      <!-- Botón para mostrar/ocultar el carrito -->
+    <div class="cart-toggle" onclick="toggleCart()">
+        <img src="imagenes/carrito-de-compras (1).png" alt="Cart Icon">
+        <span id="cart-count" class="cart-count">0</span>
+    </div>
+    <!-- Carrito -->
+    <aside class="cart" style="display: none;">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="placeOrder()">Ordenar</button>
+        <button id="clear-cart">Vaciar Carrito</button>
+
+        <!-- Formulario de dirección -->
+        <form id="direccion-form">
+            <div class="delivery-options">
+                <label>
+                    <input type="radio" name="delivery" value="store" checked onclick="toggleAddress(false)"> Recoger en tienda
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="delivery" onclick="toggleAddress(true)"> A domicilio
+                </label>
+            </div>
+            <div id="address-field" style="display: none;">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+                <button type="submit">Guardar Dirección</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
